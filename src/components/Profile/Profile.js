@@ -6,7 +6,7 @@ import resumeData from '../../utils/resumeData';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 
-import display from '../../assets/images/display.JPG';
+import display2 from '../../assets/images/display2.jpg';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 
@@ -43,7 +43,7 @@ const Profile = () => {
 			</div>
 
 			<figure className='profile_image'>
-				<img src={display} alt='beach' />
+				<img src={display2} alt='beach' />
 			</figure>
 
 			<div className='profile_information'>

@@ -19,14 +19,16 @@ const App = () => {
 				<Grid item xs>
 					<Router>
 						<Header />
-						<Switch>
-							<Route path='/resume'>
-								<Resume />
-							</Route>
-							<Route path='/'>
-								<Portfolio />
-							</Route>
-						</Switch>
+						<div className='main_content container_shadow'>
+							<Switch>
+								<Route path='/resume'>
+									<Resume />
+								</Route>
+								<Route path='/'>
+									<Portfolio />
+								</Route>
+							</Switch>
+						</div>
 					</Router>
 					<Footer />
 				</Grid>
