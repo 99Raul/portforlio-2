@@ -48,3 +48,55 @@
 .header .header_left {
 	margin-right: auto;
 }
+
+@media (max-width: 600px) {
+	.header_link_active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.header_link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.header_right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 800px) {
+	.header_link_active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 800px) {
+	.header_link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 800px) {
+	.header_right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+}

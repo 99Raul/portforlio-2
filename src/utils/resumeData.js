@@ -10,7 +10,7 @@ import project2 from '../assets/images/project2.png';
 import project3 from '../assets/images/project3.png';
 import project4 from '../assets/images/project4.png';
 
-import LinkIcon from '@material-ui/icons/Link';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 export default {
 	name: 'Raul Salazar',
@@ -102,56 +102,76 @@ export default {
 		},
 	],
 
-	portfolio: [
+	projects: [
 		{
 			tag: 'React',
-			image: { project1 },
+			image: project1,
 			title: 'React Project 1',
+			caption: 'covid 19 tracker',
 			description:
 				'This data app tracker shows the numbers and trends of people affected, recovered and decreased due to Covid-19',
 			links: [
 				{
 					link: 'https://agile-journey-16354.herokuapp.com',
-					icon: <LinkedInIcon />,
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/covid-app',
+					icon: <GitHubIcon />,
 				},
 			],
 		},
 		{
 			tag: 'React',
-			image: { project2 },
+			image: project2,
 			title: 'React Project 2',
+			caption: 'code share snippet',
 			description:
-				'Application where users can post and share code snippets.Users can post their own code snippets to save for future use and ease of accessability. Instead of digging through old projects and assignments to find a certain function you wrote, it could be saved on the app for quick reference.',
+				'Application where users can post and share code snippets. Users can post their own code snippets to save for future use and ease of accessability. Instead of digging through old projects and assignments to find a certain function you wrote, it could be saved on the app for quick reference.',
 			links: [
 				{
 					link: 'https://99raul.github.io/front-end-group/',
-					icon: <LinkedInIcon />,
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/front-end-group',
+					icon: <GitHubIcon />,
 				},
 			],
 		},
 		{
-			tag: 'React and Python',
-			image: { project3 },
+			tag: 'React/Python',
+			image: project3,
 			title: 'React/Python Project 3',
+			caption: 'social dev posts',
 			description:
 				'This app is where developers can log in and ask questions about software engineering topics, and people can comment on the questions.',
 			links: [
 				{
 					link: 'https://dev-questions-app.netlify.app/',
-					icon: <LinkedInIcon />,
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/interview-social-backend',
+					icon: <GitHubIcon />,
 				},
 			],
 		},
 		{
-			tag: 'React and Ai',
-			image: { project4 },
+			tag: 'React/Ai',
+			image: project4,
 			title: 'React/Ai Project 4',
+			caption: 'ai news application',
 			description:
 				'This app is where it utilizes alan ai voice assistant to get global news',
 			links: [
 				{
 					link: 'https://alan-ai-react.netlify.app',
-					icon: <LinkedInIcon />,
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/React-AI-News-App',
+					icon: <GitHubIcon />,
 				},
 			],
 		},

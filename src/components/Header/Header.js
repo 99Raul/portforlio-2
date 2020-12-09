@@ -14,10 +14,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
 	HomeRounded,
-	SchoolRounded,
-	WorkRounded,
-	LinkedIn,
-	GitHub,
 	Telegram,
 } from '@material-ui/icons';
 
