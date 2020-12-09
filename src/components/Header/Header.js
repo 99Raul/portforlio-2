@@ -1,11 +1,12 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import resumeData from '../../utils/resumeData';
-import CustomButton from '../Button/Button';
+// import CustomButton from '../Button/Button';
 
 import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { HomeRounded, Telegram } from '@material-ui/icons';
+import { HomeRounded } from '@material-ui/icons';
 
 import { NavLink, withRouter } from 'react-router-dom';
 // import { keys } from '@material-ui/core/styles/createBreakpoints';

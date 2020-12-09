@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import './Profile.css';
