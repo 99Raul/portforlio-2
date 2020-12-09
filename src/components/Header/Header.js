@@ -2,28 +2,24 @@ import React from 'react';
 import resumeData from '../../utils/resumeData';
 import CustomButton from '../Button/Button';
 
-import {
-	Button,
-	Form,
-	FormControl,
-	Nav,
-	Navbar,
-	NavDropdown,
-} from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {
-	HomeRounded,
-	Telegram,
-} from '@material-ui/icons';
+import { HomeRounded, Telegram } from '@material-ui/icons';
 
-import { Link, NavLink, withRouter } from 'react-router-dom';
-import { keys } from '@material-ui/core/styles/createBreakpoints';
+import { NavLink, withRouter } from 'react-router-dom';
+// import { keys } from '@material-ui/core/styles/createBreakpoints';
+// import { useHistory } from 'react-router-dom';
 
 import './Header.css';
 
 const Header = (props) => {
 	const pathName = props?.location?.pathname;
+
+	// const history = useHistory();
+	// const handleClick = () => {
+	// 	history.push('../../pages/Resume/Resume.js');
+	// };
 
 	return (
 		<Navbar expand='lg' sticky='top' className='header'>
@@ -63,7 +59,12 @@ const Header = (props) => {
 							{resumeData.socials[key].icon}
 						</a>
 					))}
-					<CustomButton text={'Hire Me'} icon={<Telegram />} />
+
+					{/* <CustomButton
+						onClick={handleClick}
+						text={'Hire Me'}
+						icon={<Telegram />}
+					/> */}
 				</div>
 			</Navbar.Collapse>
 		</Navbar>

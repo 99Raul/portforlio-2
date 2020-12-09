@@ -10,8 +10,11 @@ import display2 from '../../assets/images/display2.jpg';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 
-import CustomButton from '../Button/Button';
+// import CustomButton from '../Button/Button';
+import CustomButton2 from '../Button2/Button2'
 import GetAppIcon from '@material-ui/icons/GetApp';
+
+
 
 const CustomTimelineItem = ({ title, text, link }) => (
 	<TimelineItem>
@@ -62,11 +65,16 @@ const Profile = () => {
 				</CustomTimeline>
 
 				<div className='btn_container'>
-					<CustomButton text={'Download Cv'} icon={<GetAppIcon />} />
+					<CustomButton2
+						text={'Download Cv'}
+						icon={<GetAppIcon />}
+						
+					/>
 				</div>
 			</div>
 		</div>
 	);
 };
+
 
 export default Profile;

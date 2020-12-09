@@ -16,7 +16,32 @@ import Paper from '@material-ui/core/Paper';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import CustomButton from '../../components/Button/Button';
 
+import emailjs from 'emailjs-com';
+
 const Resume = () => {
+	function sendEmail(e) {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE_API_KEY,
+				process.env.REACT_APP_TEMPLATE_API_KEY,
+				e.target,
+				'user_ZLpf9rRCqVdvCyTIdPFRG'
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+		e.target.reset();
+
+		console.log('');
+	}
+
 	return (
 		<>
 			{/* About Me */}
@@ -149,28 +174,36 @@ const Resume = () => {
 							<h6 className='section_title_text'>Contact Form</h6>
 						</Grid>
 
-						<Grid item xs={12}>
-							<Grid container spacing={3}>
-								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name='name' label='name' />
-								</Grid>
-								<Grid item xs={12} sm={6}>
-									<TextField fullWidth name='email' label='email' />
-								</Grid>
-								<Grid item xs={12}>
-									<TextField
-										fullWidth
-										name='message'
-										label='message'
-										multiline
-										rows={4}
-									/>
-								</Grid>
-								<Grid item xs={12}>
-									<CustomButton text='Submit' />
+						<form onSubmit={sendEmail}>
+							<Grid item xs={12}>
+								<Grid container spacing={3}>
+									<Grid item xs={12} sm={6}>
+										<TextField fullWidth name='name' label='name' id='name' />
+									</Grid>
+									<Grid item xs={12} sm={6}>
+										<TextField
+											fullWidth
+											name='email'
+											label='email'
+											id='email'
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											fullWidth
+											name='message'
+											label='message'
+											id='message'
+											multiline
+											rows={4}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<CustomButton text='Submit' type='submit' />
+									</Grid>
 								</Grid>
 							</Grid>
-						</Grid>
+						</form>
 					</Grid>
 				</Grid>
 
