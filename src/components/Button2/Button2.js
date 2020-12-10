@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 
 import './Button2.css';
 
-import MyPdf from '../../files/resume.pdf';
+import MyPdf from '../../files/resume_dev.pdf';
 
 const CustomButton2 = ({ text, icon }) => {
 	return (

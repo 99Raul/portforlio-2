@@ -9,10 +9,6 @@ import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
-
-
-//console.log(process.env.REACT_APP_SERVICE_API_KEY);
-
 const App = () => {
 	return (
 		<Container className={'top_60'}>
@@ -23,6 +19,7 @@ const App = () => {
 				<Grid item xs>
 					<Router>
 						<Header />
+
 						<div className='main_content container_shadow'>
 							<Switch>
 								<Route path='/resume'>
