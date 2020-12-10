@@ -83,13 +83,14 @@ export default {
 			title: 'Front End',
 			description: [
 				'React js',
-				'Javascript/jQuery',
+				'Javascript',
 				'Html',
 				'Css',
 				'Bootstrap',
 				'Material Ui',
 				'Git/Github',
-				'Testing/Debugging',
+				'Testing',
+				'Debugging',
 			],
 		},
 		{
