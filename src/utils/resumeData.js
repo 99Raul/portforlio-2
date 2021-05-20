@@ -141,19 +141,19 @@ export default {
 			],
 		},
 		{
-			tag: 'React/Python',
+			tag: 'React/Redux',
 			image: project3,
-			title: 'React/Python Project 3',
-			caption: 'social dev posts',
+			title: 'React/Redux Project 3',
+			caption: 'social stock room',
 			description:
-				'This app is where developers can log in and ask questions about software engineering topics, and people can comment on the questions.',
+				'This app is where investors can log in and ask questions about over the counter stocks, find stock, and people can comment on the post.',
 			links: [
 				{
-					link: 'https://dev-questions-app.netlify.app/',
+					link: 'https://stock-social-room.netlify.app/posts',
 					icon: <OpenInNewIcon />,
 				},
 				{
-					link: 'https://github.com/99Raul/interview-social-backend',
+					link: 'https://github.com/99Raul/stock-room-frontend',
 					icon: <GitHubIcon />,
 				},
 			],
