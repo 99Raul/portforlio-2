@@ -9,6 +9,8 @@ import project1 from '../assets/images/project1.png';
 import project2 from '../assets/images/project2.png';
 import project3 from '../assets/images/project3.png';
 import project4 from '../assets/images/project4.png';
+import project5 from '../assets/images/project5.png';
+import project6 from '../assets/images/project6.png';
 
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
@@ -172,6 +174,42 @@ export default {
 				},
 				{
 					link: 'https://github.com/99Raul/React-AI-News-App',
+					icon: <GitHubIcon />,
+				},
+			],
+		},
+		{
+			tag: 'React',
+			image: project5,
+			title: 'React Project 5',
+			caption: 'Travel Advisor',
+			description:
+				'application where user can view restaurants and hotels around the area they are located in.',
+			links: [
+				{
+					Link: 'https://travel-advisor-raul.netlify.app',
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/travel_advisor',
+					icon: <GitHubIcon />,
+				},
+			],
+		},
+		{
+			tag: 'React/Redux',
+			image: project6,
+			title: 'React/Redux Project 6',
+			caption: 'Cryptoverse',
+			description:
+				'application where user can see top crypto currencies and exchanges. From stats to news about the crypto world.',
+			links: [
+				{
+					link: 'https://cryptoverse-reactjs.netlify.app',
+					icon: <OpenInNewIcon />,
+				},
+				{
+					link: 'https://github.com/99Raul/cryptoverse',
 					icon: <GitHubIcon />,
 				},
 			],
