@@ -187,7 +187,7 @@ export default {
 				'application where user can view restaurants and hotels around the area they are located in.',
 			links: [
 				{
-					Link: 'https://travel-advisor-raul.netlify.app',
+					link: 'https://travel-advisor-raul.netlify.app',
 					icon: <OpenInNewIcon />,
 				},
 				{
